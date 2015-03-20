@@ -1,7 +1,7 @@
 #include "header.h"
-link newflt(void)
+link newItem(void)
 {
-	char indat[64];		//inout line to be parsed
+	char indat[MaxLength-1];		//inout line to be parsed
 	char *pindat;		//pointer to input line
 	link ptr;			//pointer to parsed data structure
 	ptr=(link)malloc(sizeof(struct db));	//allocate memory for structure
