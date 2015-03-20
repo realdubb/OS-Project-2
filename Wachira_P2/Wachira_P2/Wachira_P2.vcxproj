@@ -78,6 +78,7 @@
   <ItemGroup>
     <ClCompile Include="playback.cpp" />
     <ClCompile Include="record.cpp" />
+    <ClCompile Include="todo2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />

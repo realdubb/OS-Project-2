@@ -1,6 +1,6 @@
 #include <Windows.h>
 
-void main2()
+void main4()
 {
 	DWORD count;
 	char data[250] = { 0 };

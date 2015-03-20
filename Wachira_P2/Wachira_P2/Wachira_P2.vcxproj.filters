@@ -21,6 +21,9 @@
     <ClCompile Include="playback.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="todo2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
