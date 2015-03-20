@@ -1,0 +1,23 @@
+plow        110
+
+plow        120
+
+inactivate   30
+
+plow        130
+
+plow        140
+
+activate     30
+
+inactivate   10
+
+plow        120
+
+plow        130
+
+activate     10
+
+plow        140
+
+plow        110

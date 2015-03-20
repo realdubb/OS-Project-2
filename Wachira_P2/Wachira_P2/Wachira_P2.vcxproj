@@ -76,15 +76,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dispdb.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="newflt.cpp" />
-    <ClCompile Include="parse.cpp" />
-    <ClCompile Include="readdb.cpp" />
-    <ClCompile Include="writedb.cpp" />
+    <ClCompile Include="playback.cpp" />
+    <ClCompile Include="record.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="OrderData.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ddd.out" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

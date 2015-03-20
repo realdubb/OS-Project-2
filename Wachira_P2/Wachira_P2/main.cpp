@@ -1,5 +1,5 @@
 #include "header.h"
-void main(void)
+void main_old(void)
 {
 	link ptr, firstptr, lastptr;
 	char sel;
