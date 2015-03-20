@@ -4,42 +4,35 @@ link parse(char* pindat,link ptr)
 	int index=0;		//parser index variable
 	char *mark;			//temporary line pointer
 
-	//flight number detect and copy
+	//item ID detect and copy
 
 	while(*(pindat+index)!=' ') index++;
 	*(pindat+index)=0;
-	ptr->flt = atoi(pindat);
+	ptr->itemID = atoi(pindat);
 	pindat+=index;
 
-	//city detect and copy
+	//quantity
 
-	while(*pindat++ ==' ');	//locate next nonspace value
-	mark=pindat;			//mark start of city code field
-	while(*pindat < '0' || *pindat > '9')pindat++;
-	*(--pindat)=0;
-	strcpy_s(ptr->city, mark);
+	index = 0;				//reset index to zero;
+	while (*pindat++ == ' ');	//locate next nonspace value
+	while (*(pindat + index) != ' ') index++;
+	*(pindat + index) = 0;
+	ptr->quantity = atoi(pindat);
+	pindat += index;
 
-	//time detect and copy
+	//price
 
 	index=0;				//reset index to zero;
 	while(*pindat++ ==' ');	//locate next nonspace value
 	while(*(pindat+index)!=' ') index++;
 	*(pindat+index)=0;
-	ptr->time = atoi(pindat);
+	ptr->price = atof(pindat);
 	pindat+=index;
 
-	//gate detect and copy
 
-	index=0;				//reset index to zero;
-	while(*pindat++ ==' ');	//locate next nonspace value
-	while(*(pindat+index)!=' ') index++;
-	*(pindat+index)=0;
-	ptr->gate = atoi(pindat);
-	pindat+=index;
-
-	//remarks detect and copy
+	//description
 
 	while(*pindat++ ==' ');	//locate next nonspace value
-	strcpy_s(ptr->rmk, pindat);
+	strcpy_s(ptr->description, pindat);
 	return ptr;
 }

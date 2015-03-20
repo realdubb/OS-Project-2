@@ -76,9 +76,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="playback.cpp" />
-    <ClCompile Include="record.cpp" />
-    <ClCompile Include="todo2.cpp" />
+    <ClCompile Include="dispdb.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="parse.cpp" />
+    <ClCompile Include="readdb.cpp" />
+    <ClCompile Include="writedb.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />

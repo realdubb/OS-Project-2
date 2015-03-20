@@ -15,13 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="record.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="playback.cpp">
+    <ClCompile Include="readdb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="todo2.cpp">
+    <ClCompile Include="writedb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dispdb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
