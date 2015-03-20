@@ -76,6 +76,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dispdb.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="newflt.cpp" />
+    <ClCompile Include="parse.cpp" />
+    <ClCompile Include="readdb.cpp" />
     <ClCompile Include="writedb.cpp" />
   </ItemGroup>
   <ItemGroup>
