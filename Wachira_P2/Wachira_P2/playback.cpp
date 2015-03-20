@@ -1,6 +1,6 @@
 #include <Windows.h>
 
-void main()
+void main2()
 {
 	DWORD count;
 	char data[250] = { 0 };
@@ -8,7 +8,7 @@ void main()
 	HANDLE file, output;
 
 
-	TCHAR fileName[] = TEXT("C:\\Users\\aleqs_000\\Documents\\GitHub\\OS-Project-2\\Wachira_P2\\Wachira_P2\\record.out");
+	TCHAR fileName[] = TEXT("C:\\Users\\alex\\Documents\\GitHub\\OS-Project-2\\Wachira_P2\\Wachira_P2\\record.out");
 
 
 	output = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -27,3 +27,15 @@ void main()
 	CloseHandle(file);
 	Sleep(5000);
 }
+
+/*
+Create File is opening a file in the directory specified for a generic read.
+Write File, the first command transfers data from memory where prompt variable is stored and outputs to console 72 characters.
+The first Read File, reads from file the first 250 characters and stores that in data char array.
+
+Write File #2, gets from "data", a 'count' number of characters and writes that to the output.
+Read File #2 continues getting data from the file and storing it in data
+
+CloseHandle, terminates access to the file so it can now be open with other programs
+
+*/
